@@ -9,10 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <?php
-       // $teste = $_GET["teste"];
-    ?>
-    <title>My Garden App</title>
+    <title>HORTEC</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -206,25 +203,30 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">My Garden APP</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Hortec App</h1>
                         
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
+                    <!-- Content Row Centro-->
+                    <div class="row--center">
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card border-left-secondary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">SENSOR 1</div>    
                                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Humidade do sole</div>
-                                            <div class="h2 mb-0 font-weight-bold text-gray-800">70%</div>
-                                        </div>
+                                                Humidade do Ar</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20%</div>
+                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                Temperatura do Ar</div>
+                                            <div class="h5 mb-2 font-weight-bold text-gray-800">26°C</div>
+                                            <div class="text-xs font-weight-bold text-dark text-uppercase mb-0">
+                                                11/10/2023 15:06:28</div>                                        </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-percentage fa-2x text-gray-300"></i>
+                                            <i class="fas fa-list fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -233,26 +235,29 @@
                         <!-- Earnings (Monthly) Card Example -->
                         
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card border-left-marrom shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Temperatura da Água</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php //echo $teste?>ºC</div>
-                                        </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">SENSOR 2</div>    
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                Humidade do Solo</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">46%</div>
+                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                Temperatura do Solo</div>
+                                            <div class="h5 mb-2 font-weight-bold text-gray-800">22°C</div>
+                                            <div class="text-xs font-weight-bold text-dark text-uppercase mb-0">
+                                                11/10/2023 15:39:11</div>                                        </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-temperature-low fa-2x text-gray-300"></i>
+                                            <i class="fas fa-list fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-5">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
@@ -260,12 +265,12 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">75%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">7%</div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 75%" aria-valuenow="50" aria-valuemin="0"
+                                                            style="width: 7%" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
@@ -273,28 +278,6 @@
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-faucet fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <span class="badge badge-danger badge-counter">Em breve</span>
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                PH do Reservatório</div>
-
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                            
-                                        </div>
-                                        <div class="col-auto">
-                                            
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
