@@ -1,4 +1,6 @@
-
+<?php 
+    include_once('functions/dadosSensor.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -212,17 +214,17 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-secondary shadow h-100 py-2">
+                            <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">SENSOR 1</div>    
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $nomeSensorAr; ?></div>    
                                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                                 Humidade do Ar</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20%</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $umidadeAr; ?></div>
                                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                                 Temperatura do Ar</div>
-                                            <div class="h5 mb-2 font-weight-bold text-gray-800">26°C</div>
+                                            <div class="h5 mb-2 font-weight-bold text-gray-800"><?php echo $tempAr; ?></div>
                                             <div class="text-xs font-weight-bold text-dark text-uppercase mb-0">
                                                 11/10/2023 15:06:28</div>                                        </div>
                                         <div class="col-auto">
@@ -239,15 +241,16 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">SENSOR 2</div>    
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $nomeSensorSolo; ?></div>    
                                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                                 Humidade do Solo</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">46%</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $umidadeSolo; ?></div>
                                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                                 Temperatura do Solo</div>
-                                            <div class="h5 mb-2 font-weight-bold text-gray-800">22°C</div>
+                                            <div class="h5 mb-2 font-weight-bold text-gray-800"><?php echo $tempSolo; ?></div>
                                             <div class="text-xs font-weight-bold text-dark text-uppercase mb-0">
-                                                11/10/2023 15:39:11</div>                                        </div>
+                                                11/10/2023 15:39:11</div>                                        
+                                            </div>
                                         <div class="col-auto">
                                             <i class="fas fa-list fa-2x text-gray-300"></i>
                                         </div>
@@ -265,12 +268,12 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">7%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo $volumeReservatorio; ?></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
                                                         <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 7%" aria-valuenow="50" aria-valuemin="0"
+                                                            style="width: <?php echo $volumeReservatorio;?>" aria-valuenow="50" aria-valuemin="0"
                                                             aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
