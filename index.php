@@ -213,7 +213,7 @@
                     <div class="row--center">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -226,7 +226,7 @@
                                                 Temperatura do Ar</div>
                                             <div class="h5 mb-2 font-weight-bold text-gray-800"><?php echo $tempAr; ?></div>
                                             <div class="text-xs font-weight-bold text-dark text-uppercase mb-0">
-                                                11/10/2023 15:06:28</div>                                        </div>
+                                               Última leitura: <?php echo $ultLeituraAr ?></div>                                        </div>
                                         <div class="col-auto">
                                             <i class="fas fa-list fa-2x text-gray-300"></i>
                                         </div>
@@ -236,7 +236,7 @@
                         </div>
                         <!-- Earnings (Monthly) Card Example -->
                         
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-marrom shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -249,7 +249,7 @@
                                                 Temperatura do Solo</div>
                                             <div class="h5 mb-2 font-weight-bold text-gray-800"><?php echo $tempSolo; ?></div>
                                             <div class="text-xs font-weight-bold text-dark text-uppercase mb-0">
-                                                11/10/2023 15:39:11</div>                                        
+                                            Última leitura: <?php echo $ultLeituraSolo ?></div>                                        
                                             </div>
                                         <div class="col-auto">
                                             <i class="fas fa-list fa-2x text-gray-300"></i>
