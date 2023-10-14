@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include 'connection.php';
 ob_start();
 session_start();
 
